@@ -573,11 +573,13 @@ function App() {
  <div style={{ backgroundColor: 'lightgray', color: '#3B444B', textAlign: 'center', padding: '50px 0', height: '400px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
   <h1 style={{ fontSize: '48px', marginBottom: '20px' }}>Hire Me!</h1>
   <p style={{ fontSize: '18px', marginBottom: '30px', width: '60%', textAlign: 'center' }}>
-    Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia
-    reprehenderit. Eos cumque dicta adipisci architecto culpa amet.
+  If you're looking for a motivated individual who is ready to make a meaningful impact, I would love to connect! Feel free to adjust it to better fit your style or specific skills!
   </p>
-  <button style={{ backgroundColor: '#3B444B', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', cursor: 'pointer' }}>CONTACT US</button>
-</div>
+  <a href="https://www.linkedin.com/in/laraib-khalid-60b926232" target="_blank" rel="noopener noreferrer">
+    <button style={{ backgroundColor: '#3B444B', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', cursor: 'pointer' }}>
+        CONTACT US
+    </button>
+</a></div>
 
 
 {/* Contact Me  */}
