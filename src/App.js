@@ -17,7 +17,7 @@ import contact from './images/contact.png'
 //import fonts
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-import { faGithub,faWhatsapp, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faWhatsapp,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
 
@@ -145,7 +145,7 @@ function App() {
           <a href="https://wa.me/03335550807"><FontAwesomeIcon icon={faWhatsapp} size="2x" className="icon" /></a>
           <a href="https://github.com/laraib776"><FontAwesomeIcon icon={faGithub} size="2x" className="icon" /></a>
           <a href="https://www.linkedin.com/in/laraib-khalid-60b926232"><FontAwesomeIcon icon={faLinkedinIn} size="2x" className="icon" /></a>
- 
+          {/* <a href=""><FontAwesomeIcon icon={faWhatsapp} size="2x" className="icon" /></a> */}
         </div>
       </div>
    
