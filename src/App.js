@@ -145,7 +145,6 @@ function App() {
           <a href="https://wa.me/03335550807"><FontAwesomeIcon icon={faWhatsapp} size="2x" className="icon" /></a>
           <a href="https://github.com/laraib776"><FontAwesomeIcon icon={faGithub} size="2x" className="icon" /></a>
           <a href="https://www.linkedin.com/in/laraib-khalid-60b926232"><FontAwesomeIcon icon={faLinkedinIn} size="2x" className="icon" /></a>
-          {/* <a href=""><FontAwesomeIcon icon={faWhatsapp} size="2x" className="icon" /></a> */}
         </div>
       </div>
    
