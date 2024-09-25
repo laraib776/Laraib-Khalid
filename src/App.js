@@ -189,7 +189,7 @@ function App() {
         >
           <img
             src={project.imageUrl}
-            alt={`${project.title} image`}
+            alt={`${project.title}`}
             style={{
               width: '100%',
               height: '100%',
