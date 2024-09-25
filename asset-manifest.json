@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Laraib-Khalid/static/css/main.4a2cf684.css",
+    "main.js": "/Laraib-Khalid/static/js/main.18b60ce0.js",
+    "static/js/453.1407b060.chunk.js": "/Laraib-Khalid/static/js/453.1407b060.chunk.js",
+    "static/media/1.png": "/Laraib-Khalid/static/media/1.4856b5a2ab2a8aba1cca.png",
+    "static/media/me_profile_pic.jpg": "/Laraib-Khalid/static/media/me_profile_pic.1b7c242fc51c56c9aec6.jpg",
+    "static/media/proj6.jpg": "/Laraib-Khalid/static/media/proj6.487704373ccf71b293cb.jpg",
+    "static/media/proj8.webp": "/Laraib-Khalid/static/media/proj8.b61a7e03062cd04c6635.webp",
+    "static/media/contact.png": "/Laraib-Khalid/static/media/contact.9c89037523b7d04ff307.png",
+    "static/media/tranlator_app.png": "/Laraib-Khalid/static/media/tranlator_app.5965109ba4a001229b98.png",
+    "static/media/proj7.png": "/Laraib-Khalid/static/media/proj7.0ea029a0b2cb1707d83f.png",
+    "static/media/mainimage.page.jpg": "/Laraib-Khalid/static/media/mainimage.page.1cf818d3ee5251d1e5d9.jpg",
+    "static/media/car-rental-booking-app-vector.jpg": "/Laraib-Khalid/static/media/car-rental-booking-app-vector.2135c384e92090c881cd.jpg",
+    "index.html": "/Laraib-Khalid/index.html",
+    "main.4a2cf684.css.map": "/Laraib-Khalid/static/css/main.4a2cf684.css.map",
+    "main.18b60ce0.js.map": "/Laraib-Khalid/static/js/main.18b60ce0.js.map",
+    "453.1407b060.chunk.js.map": "/Laraib-Khalid/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a2cf684.css",
+    "static/js/main.18b60ce0.js"
+  ]
+}
