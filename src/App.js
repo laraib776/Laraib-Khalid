@@ -15,11 +15,9 @@ import proj8 from './images/proj8.webp'
 import contact from './images/contact.png'
 
 //import fonts
-// Remove these if not used
-// import { faTwitter, faFacebook, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faWhatsapp, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
 
