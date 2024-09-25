@@ -144,36 +144,36 @@ function App() {
         <div className="icons-section">
           <a href="#"><FontAwesomeIcon icon={faTwitter} size="2x" className="icon" /></a>
           <a href="#"><FontAwesomeIcon icon={faFacebook} size="2x" className="icon" /></a>
-          <a href="#"><FontAwesomeIcon icon={faLinkedinIn} size="2x" className="icon" /></a>
+          <a href="https://www.linkedin.com/in/laraib-khalid-60b926232"><FontAwesomeIcon icon={faLinkedinIn} size="2x" className="icon" /></a>
           <a href="#"><FontAwesomeIcon icon={faGooglePlusG} size="2x" className="icon" /></a>
         </div>
       </div>
    
-                                       {/* SKILL SECTION*/ }
       <div className="skill-container">
-        <h2 className="skill-title">Skills</h2>
-        {skills.map(skill => (
-          <div key={skill.name} className="skill">
-            <svg viewBox="0 0 36 36" className="svg-skill">
-              <path
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                fill="none"
-                stroke="#ccc"
-                strokeWidth="1"
-              />
-              <path
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                fill="none"
-                stroke="#3B444B"
-                strokeDasharray={`${skill.level}, 100`}
-                strokeWidth="1"
-              />
-            </svg>
-            <div className="skill-name">{skill.name}</div>
-            <div className="skill-level">{skill.level}%</div>
-          </div>
-        ))}
-      </div>
+  <h2 className="skill-title">Skills</h2>
+  {skills.map(skill => (
+    <div key={skill.name} className="skill">
+      <svg viewBox="0 0 36 36" className="svg-skill">
+        <path
+          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+          fill="none"
+          stroke="#ccc"
+          strokeWidth="1"
+        />
+        <path
+          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+          fill="none"
+          stroke="#3B444B"
+          strokeDasharray={`${skill.level}, 100`}
+          strokeWidth="1"
+        />
+      </svg>
+      <div className="skill-name">{skill.name}</div>
+      <div className="skill-level">{skill.level}%</div>
+    </div>
+  ))}
+</div>
+
 
                                                  {/* Projects SECTION*/}
 
@@ -208,543 +208,148 @@ function App() {
         </div>
       ))}
     </div>
+    <div style={{backgroundColor:'lightgray',width:'100%',height:'15vh',color:'lightgray'}}>......</div>
   </div>
 
-{/* resume
-                                                
-    <div id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Resume</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Senior Developer</h3>
-									<span class="company">Company Name - 2016 - Current</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Junior Developer</h3>
-									<span class="company">Company Name - 2013 - 2015</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">UI/UX Designer</h3>
-									<span class="company">Company Name - 2010 - 2012</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li>
+{/* resume */}
 
-						{/* <br> */}
-						{/* <li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Masters Degree</h3>
-									<span class="company">University Name - 2007 - 2009</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Bachelors Degree</h3>
-									<span class="company">University Name - 2002 - 2006</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Diploma Course</h3>
-									<span class="company">College Name - 1999 - 2001</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Graduation</h3>
-									<span class="company">College Name - 1994 - 1998</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div> */} 
+<div className="resume-container">
+    <div style={{height:'12vh'}}></div>
+    <h2 className="resume-title">My Resume</h2>
+    <div style={{height:'8vh'}}></div>
 
-<div style={{ position: 'relative', width: '100%', height: 'auto' }}>
-<div style={{height:'12vh'}}></div>
-      <h2 style={{ fontWeight: 'normal', fontFamily: 'Roboto Mono, monospace', fontSize: '7vh', textAlign: 'center' }}>
-        My Resume
-      </h2>
-<div style={{height:'8vh'}}></div>
-      {/* Vertical Line */}
-      <div style={{
-        position: 'absolute',
-        height: '85%',
-        borderLeft: '2px solid lightgray',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        zIndex: 0 // Lower z-index so it's below the boxes
-      }}></div>
+    {/* Vertical Line */}
+    <div className="vertical-line"></div>
 
-      {/* Heading for Experience */}
-      <div style={{
-        width: '20%',
-        maxWidth: '600px',
-        margin: '0vh auto',
-        borderRadius: '1vh',
-        backgroundColor: 'lightgray',
-        fontFamily: 'Roboto Mono, monospace',
-        fontSize: '4vh',
-        textAlign: 'center',
-        display: 'flex',
-        justifyContent: 'center',
-        position: 'relative',
-        zIndex: 1,
-        top: '0'
-      }}>
-        My Experience
-      </div>
+    {/* Heading for Experience */}
+    <div className="experience-heading">My Experience</div>
 
-      {/* Experience 1 */}
-      <div style={{
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        width: '45%',
-        marginLeft: '53%',
-        marginBottom: '20px'
-      }}>
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          width: '100%',
-          position: 'relative'
-        }}>
-          <div style={{
-            position: 'absolute',
-            left: '-50px', // Position icon to the left of the vertical line
-            top: '50%',
-            transform: 'translateY(-50%)',
-            zIndex: 1 // Ensure the icon is above other elements
-          }}>
+    {/* Experience 1 */}
+    <div className="experience-box left">
+        <div className="iconn left">
             <FontAwesomeIcon icon={faBriefcase} style={{ fontSize: '30px' }} />
-          </div>
-          <div style={{
-            marginLeft: '10px',
-            display: 'flex',
-            flexDirection: 'column'
-          }}>
-            <h3 style={{ fontFamily: 'Roboto Mono, monospace', fontSize: '5vh', fontWeight: 'normal' }}>
-              Software Intern
-            </h3>
-            <p style={{ color: 'grey' }}>Naxxa - Aug 2024 - Current, Feb 2024 - March 2024</p>
-            <p>Doing hands-on practice on real-time <br /> projects while gaining knowledge of Reactjs <br /> and working on APIs.</p>
-          </div>
         </div>
-      </div>
+        <div className="experience-text">
+            <h3>Software Intern</h3>
+            <p>Naxxa - Aug 2024 - Current, Feb 2024 - March 2024</p>
+            <p>Doing hands-on practice on real-time projects while gaining knowledge of Reactjs and working on APIs.</p>
+        </div>
+    </div>
 
-      {/* Experience 2 */}
-      <div style={{
-  display: 'flex',
-  justifyContent: 'flex-end',
-  alignItems: 'center',
-  width: '45%',
-  margin: '0 auto',
-  marginBottom: '20px',
-   marginLeft: '12%'
-}}>
-  <div style={{
-    display: 'flex',
-    alignItems: 'center',
-    width: '100%',
-    position: 'relative'
-  }}>
-    <div style={{
-      position: 'absolute',
-      right: '70px', // Adjusted to decrease the gap between the icon and the text
-      top: '50%',
-      transform: 'translateY(-50%)',
-      zIndex: 1 // Ensure the icon is above other elements
-    }}>
+    {/* Experience 2 */}
+    <div className="experience-box right">
+        <div className="iconn right">
             <FontAwesomeIcon icon={faBriefcase} style={{ fontSize: '30px' }} />
-          </div>
-          <div style={{
-            marginRight: '10px',
-            display: 'flex',
-            flexDirection: 'column',
-            textAlign: 'right'
-          }}>
-            <h3 style={{ fontFamily: 'Roboto Mono, monospace', fontSize: '5vh', fontWeight: 'normal' }}>
-              Intern
-            </h3>
-            <p style={{ color: 'grey' }}>PNRA - Jul 2024 - Aug 2024</p>
-            <p>Working at PNRA in licensing and compliance <br /> monitoring of nuclear facilities while <br /> also contributing to cybersecurity measures.</p>
-          </div>
         </div>
-      </div>
+        <div className="experience-text">
+            <h3>Intern</h3>
+            <p>PNRA - Jul 2024 - Aug 2024</p>
+            <p>Working at PNRA in licensing and compliance monitoring of nuclear facilities while also contributing to cybersecurity measures.</p>
+        </div>
+    </div>
 
-      {/* Experience 3 */}
-      <div style={{
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        width: '45%',
-        marginLeft: '53%',
-        marginBottom: '20px'
-      }}>
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          width: '100%',
-          position: 'relative'
-        }}>
-          <div style={{
-            position: 'absolute',
-            left: '-50px', // Position icon to the left of the vertical line
-            top: '50%',
-            transform: 'translateY(-50%)',
-            zIndex: 1 // Ensure the icon is above other elements
-          }}>
+    {/* Experience 3 */}
+    <div className="experience-box left">
+        <div className="iconn left">
             <FontAwesomeIcon icon={faBriefcase} style={{ fontSize: '30px' }} />
-          </div>
-          <div style={{
-            marginLeft: '10px',
-            display: 'flex',
-            flexDirection: 'column'
-          }}>
-            <h3 style={{ fontFamily: 'Roboto Mono, monospace', fontSize: '5vh', fontWeight: 'normal' }}>
-              Research Assistant
-            </h3>
-            <p style={{ color: 'grey' }}>Institute of Space & Technology - Jun 2023 - Sep 2023</p>
-            <p>Contributing to research efforts by reviewing <br /> and analyzing data from specific papers <br /> accumulating required information and organizing it.</p>
-          </div>
         </div>
-      </div>
+        <div className="experience-text">
+            <h3>Research Assistant</h3>
+            <p>Institute of Space & Technology - Jun 2023 - Sep 2023</p>
+            <p>Contributing to research efforts by reviewing and analyzing data from specific papers accumulating required information and organizing it.</p>
+        </div>
+    </div>
 
-      {/* Heading for Education */}
-      <div style={{
-        width: '20%',
-        maxWidth: '600px',
-        margin: '2vh auto',
-        borderRadius: '1vh',
-        backgroundColor: 'lightgray',
-        fontFamily: 'Roboto Mono, monospace',
-        fontSize: '4vh',
-        textAlign: 'center',
-        display: 'flex',
-        justifyContent: 'center',
-        position: 'relative',
-        zIndex: 1,
-      }}>
-        Education
-      </div>
+    {/* Heading for Education */}
+    <div className="education-heading">Education</div>
 
-      {/* Education 1 */}
-      <div style={{
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        width: '45%',
-        marginLeft: '53%',
-        marginBottom: '20px'
-      }}>
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          width: '100%',
-          position: 'relative'
-        }}>
-          <div style={{
-            position: 'absolute',
-            left: '-60px', // Position icon to the left of the vertical line
-            top: '50%',
-            transform: 'translateY(-50%)',
-            zIndex: 1 // Ensure the icon is above other elements
-          }}>
+    {/* Education 1 */}
+    <div className="experience-box right">
+        <div className="iconn right">
             <FontAwesomeIcon icon={faGraduationCap} style={{ fontSize: '30px' }} />
-          </div>
-          <div style={{
-            marginLeft: '10px',
-            display: 'flex',
-            flexDirection: 'column'
-          }}>
-            <h3 style={{ fontFamily: 'Roboto Mono, monospace', fontSize: '5vh', fontWeight: 'normal' }}>
-              Bachelors Degree
-            </h3>
-            <p style={{ color: 'grey' }}>Institute of Space & Technology - 2021 - Current</p>
-            <p>Gaining technical knowledge with scoring <br /> highest CGPA 3.9, <br /> while securing a scholarship from IST.</p>
-          </div>
         </div>
-      </div>
+        <div className="experience-text">
+            <h3>Bachelors Degree</h3>
+            <p>Institute of Space & Technology - 2021 - Current</p>
+            <p>Gaining technical knowledge with scoring highest CGPA 3.9, while securing a scholarship from IST.</p>
+        </div>
+    </div>
 
-      {/* Education 2 */}
-      <div style={{
-  display: 'flex',
-  justifyContent: 'flex-end',
-  alignItems: 'center',
-  width: '45%',
-  margin: '0 auto',
-  marginBottom: '20px',
-   marginLeft: '12%'
-}}>
-  <div style={{
-    display: 'flex',
-    alignItems: 'center',
-    width: '100%',
-    position: 'relative'
-  }}>
-    <div style={{
-      position: 'absolute',
-      right: '70px', // Adjusted to decrease the gap between the icon and the text
-      top: '50%',
-      transform: 'translateY(-50%)',
-      zIndex: 1 // Ensure the icon is above other elements
-    }}>
-      <FontAwesomeIcon icon={faGraduationCap} style={{ fontSize: '30px' }} />
+    {/* Education 2 */}
+    <div className="experience-box left">
+        <div className="iconn left">
+            <FontAwesomeIcon icon={faGraduationCap} style={{ fontSize: '30px' }} />
+        </div>
+        <div className="experience-text">
+            <h3>Graduation</h3>
+            <p>FFCG - 2019 - 2021</p>
+            <p>Passing the HSSC I and II with A1 grade attaining 96% results (1060/1100) in the Pre-Engineering Category.</p>
+        </div>
     </div>
-    <div style={{
-      marginRight: '10px',
-      display: 'flex',
-      flexDirection: 'column',
-      textAlign: 'right'
-    }}>
-      <h3 style={{ fontFamily: 'Roboto Mono, monospace', fontSize: '5vh', fontWeight: 'normal' }}>
-        Graduation
-      </h3>
-      <p style={{ color: 'grey' }}>FFCG - 2019 - 2021</p>
-      <p>Passing the HSSC I and II with A1 grade <br /> attaining 96% results (1060/1100) <br /> in the Pre-Engineering Category.</p>
-    </div>
-  </div>
 </div>
-    </div>
+
 
  {/* Hire Me */}
- <div style={{height:'20vh',color:'white'}}>....</div>
- <div style={{ backgroundColor: 'lightgray', color: '#3B444B', textAlign: 'center', padding: '50px 0', height: '400px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-  <h1 style={{ fontSize: '48px', marginBottom: '20px' }}>Hire Me!</h1>
-  <p style={{ fontSize: '18px', marginBottom: '30px', width: '60%', textAlign: 'center' }}>
-  If you're looking for a motivated individual who is ready to make a meaningful impact, I would love to connect! Feel free to adjust it to better fit your style or specific skills!
+
+<div className="hireMeContainer">....</div>
+<div className="hireMeSection">
+  <h1 className="hireMeTitle">Hire Me!</h1>
+  <p className="hireMeText">
+    If you're looking for a motivated individual who is ready to make a meaningful impact, I would love to connect! Feel free to adjust it to better fit your style or specific skills!
   </p>
   <a href="https://www.linkedin.com/in/laraib-khalid-60b926232" target="_blank" rel="noopener noreferrer">
-    <button style={{ backgroundColor: '#3B444B', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', cursor: 'pointer' }}>
-        CONTACT US
+    <button className="hireMeButton">
+      CONTACT US
     </button>
-</a></div>
+  </a>
+</div>
 
 
 {/* Contact Me  */}
 
-<div
-  style={{
-    width: '85%',
-    background: '#fff',
-    borderRadius: '6px',
-    padding: '20px 60px 30px 40px',
-    boxShadow: '0 5px 10px rgba(0, 0, 0, 0.2)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    margin: '0 auto',
-  }}
->
-  <div
-    style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      width: '100%',
-    }}
-  >
-    <div
-      style={{
-        width: '25%',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: '15px',
-        position: 'relative',
-      }}
-    >
+<div className="contactContainer">
+  <div className="contactWrapper">
+    <div className="contactImageWrapper">
       <img
         src={contact} // Replace with your image path
         alt="Contact"
-        style={{
-          width: '150%',
-          height: '190%',
-          borderRadius: '6px',
-        }}
+        className="contactImage"
       />
     </div>
 
-    <div style={{ height: '20vh', color: 'white' }}>....</div>
+    {/* <div className="spacer"></div> */}
 
-    <div
-      style={{
-        width: '75%',
-        marginLeft: '75px',
-      }}
-    >
-      <div
-        style={{
-          fontSize: '23px',
-          fontWeight: '600',
-          color: '#3B444B',
-        }}
-      >
-        Send us a message
-      </div>
-      <p style={{ color: '#afafb6' }}>
+    <div className="contactFormWrapper">
+      <div className="contactTitle">Send us a message</div>
+      <p className="contactDescription">
         If you have any work from me or any types of queries related to my tutorial, you can send me a message from here. It's my pleasure to help you.
       </p>
       <form action="#">
-        <div
-          style={{
-            height: '50px',
-            width: '100%',
-            margin: '12px 0',
-          }}
-        >
+        <div className="inputWrapper">
           <input
             type="text"
             placeholder="Enter your name"
-            style={{
-              height: '100%',
-              width: '100%',
-              border: 'none',
-              outline: 'none',
-              fontSize: '16px',
-              background: 'lightgray',
-              borderRadius: '6px',
-              padding: '0 15px',
-            }}
+            className="contactInput"
           />
         </div>
-        <div
-          style={{
-            height: '50px',
-            width: '100%',
-            margin: '12px 0',
-          }}
-        >
+        <div className="inputWrapper">
           <input
             type="text"
             placeholder="Enter your email"
-            style={{
-              height: '100%',
-              width: '100%',
-              border: 'none',
-              outline: 'none',
-              fontSize: '16px',
-              background: 'lightgray',
-              borderRadius: '6px',
-              padding: '0 15px',
-            }}
+            className="contactInput"
           />
         </div>
-        <div
-          style={{
-            minHeight: '110px',
-            paddingTop: '6px',
-            height: '100%',
-            width: '100%',
-            border: 'none',
-            outline: 'none',
-            fontSize: '16px',
-            background: 'lightgray',
-            borderRadius: '6px',
-            padding: '0 15px',
-          }}
-        >
+        <div className="textareaWrapper">
           <textarea
             placeholder="Enter your message"
-            style={{
-              height: '100%',
-              width: '90%',
-              border: 'none',
-              outline: 'none',
-              fontSize: '16px',
-              background: 'lightgray',
-              borderRadius: '6px',
-              padding: '0 0',
-              resize: 'none',
-              marginTop:'2vh',
-              
-            }}
+            className="contactTextarea"
           ></textarea>
         </div>
-        <div
-          style={{
-            display: 'inline-block',
-            marginTop: '12px',
-          }}
-        >
+        <div className="sendButtonWrapper">
           <input
             type="button"
             value="Send Now"
-            style={{
-              margin: '3vh',
-              color: '#fff',
-              fontSize: '18px',
-              outline: 'none',
-              border: 'none',
-              padding: '8px 16px',
-              borderRadius: '20px',
-              background: '#3B444B',
-              cursor: 'pointer',
-              transition: 'all 0.3s ease',
-            }}
+            className="sendButton"
           />
         </div>
       </form>

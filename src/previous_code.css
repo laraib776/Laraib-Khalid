@@ -1,0 +1,1308 @@
+import React from 'react';
+import './App.css';
+
+
+// import images
+import me_profile_pic from './me_profile_pic.jpg';
+import proj1 from './images/ed.jpg'
+import proj2 from './images/mainimage.page.jpg'
+import proj3 from './images/1.png'
+import proj4 from './images/tranlator_app.png'
+import proj5 from './images/car-rental-booking-app-vector.jpg'
+import proj6 from './images/proj6.jpg'
+import proj7 from './images/proj7.png'
+import proj8 from './images/proj8.webp'
+import contact from './images/contact.png'
+
+//import fonts
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faWhatsapp, faTwitter, faFacebook, faLinkedinIn, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
+
+function App() {
+
+  const skills = [
+    { name: 'Python', level: 90 },
+    { name: 'JavaScript', level: 85 },
+    { name: 'ReactJS', level: 85 },
+    { name: 'React Native', level: 80 },
+    { name: 'C++', level: 70 },
+    { name: 'HTML5/CSS3', level: 85 },
+    { name: 'MySQL', level: 78 },
+    { name: 'AI/ML', level: 85 },
+  ];
+
+  const projects = [
+    {
+      title: "ValidatorHub",
+      imageUrl: proj1 , // Use the imported image
+      projectUrl: "https://github.com/laraib776/ValidatorHub",
+    },
+    {
+      title: "Melodia",
+      imageUrl: proj2 , // Use the imported image
+      projectUrl: "https://github.com/laraib776/Melodia",
+    },
+    {
+      title: "IU-Music-Hub-E-commerce-Store",
+      imageUrl: proj3 , // Use the imported image
+      projectUrl: "https://github.com/laraib776/IU-Music-Hub-E-commerce-Store",
+    },
+    {
+      title: "LinguaMate-UniversalVoice-Translation-",
+      imageUrl: proj4 , // Use the imported image
+      projectUrl: "https://github.com/laraib776/LinguaMate-UniversalVoice-Translation-",
+    },
+    {
+      title: "AutoBook",
+      imageUrl: proj5 , // Use the imported image
+      projectUrl: "https://github.com/laraib776/AutoBook",
+    },
+    {
+      title: "Calenderium",
+      imageUrl: proj6 , // Use the imported image
+      projectUrl: "https://github.com/laraib776/Calenderium",
+    },
+    {
+      title: "Satellite Imaging Segmentation Using DL",
+      imageUrl: proj7 , // Use the imported image
+      projectUrl: "https://github.com/laraib776/Satellite-Imaging-Segmentation-Using-Deep-Learning",
+    },
+    {
+      title: "Attendence System using Facial Recognition",
+      imageUrl: proj8 , // Use the imported image
+      projectUrl: "https://github.com/laraib776/Attendence-System-using-Facial-Recognition",
+    },
+    // Add more projects here
+  ];
+
+  return (
+    <div className="container">
+                                       {/* PROFILE SECTION */ }
+      <div className="profile-container">
+        <div className="profile-inner">
+          <img src={me_profile_pic} alt="profile_pic" className="profile-pic" />
+          
+          <div className="name-container">
+            <div className="tilted-name">- Laraib Khalid -</div>
+          </div>
+          
+          <div className="title">Web Developer / Python Developer / AI / ML</div>
+          
+          <div className="social-icons">
+            <a href="https://github.com/laraib776" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} size="2x" className="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/laraib-khalid-60b926232" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" className="icon" />
+            </a>
+            <a href="https://wa.me/03335550807" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faWhatsapp} size="2x" className="icon" />
+            </a>
+            
+          </div>
+        </div>
+      </div>
+                                        {/* ABOUT ME SECTION*/ }
+      <div className="about-container">
+        <h2 className="about-title">About Me</h2>
+        <div className="about-section">
+          <div className="info-section">
+            <div className="info-item">
+              <div className="info-label">Full Name:</div>
+              <div className="info-value">Laraib Khalid</div>
+            </div>
+            <div className="info-item">
+              <div className="info-label">Phone:</div>
+              <div className="info-value">03335550807</div>
+            </div>
+            <div className="info-item">
+              <div className="info-label">Email:</div>
+              <div className="info-value">laraibkhalid776@gmail.com</div>
+            </div>
+            <div className="info-item">
+              <div className="info-label">Website:</div>
+              <div className="info-value">www.portfolio.com</div>
+            </div>
+            <div className="info-item">
+              <div className="info-label">Address:</div>
+              <div className="info-value">Bahria Town Rawalpindi, Pakistan</div>
+            </div>
+          </div>
+
+          <div className="paragraph-section">
+            <h2 className="paragraph-title">Hello There!</h2>
+            <p className="paragraph">
+             I'm an enthusiastic Full Stack Python Developer with a flair for crafting innovative solutions 🚀. From developing immersive health apps to dynamic music platforms, I've blended creativity technical prowess. Currently mastering Reactjs and delving into the world of data science, I'm all about versatility. 
+           </p>
+            <p className="paragraph">
+            🎓  Studying Computer Science at the Institute of Space Technology , I'm actively contributing as an executive member of ACM and content lead at IES. I'm not just seeking opportunities; I'm on the lookout for connections that spark collaboration and innovation. Let's connect and bring some dynamism to the tech world! ✨
+            </p>
+          </div>
+        </div>
+
+        <div className="icons-section">
+          <a href="#"><FontAwesomeIcon icon={faTwitter} size="2x" className="icon" /></a>
+          <a href="#"><FontAwesomeIcon icon={faFacebook} size="2x" className="icon" /></a>
+          <a href="https://www.linkedin.com/in/laraib-khalid-60b926232"><FontAwesomeIcon icon={faLinkedinIn} size="2x" className="icon" /></a>
+          <a href="#"><FontAwesomeIcon icon={faGooglePlusG} size="2x" className="icon" /></a>
+        </div>
+      </div>
+   
+                                       {/* SKILL SECTION*/ }
+                                       <div className="skill-container">
+        <h2 className="skill-title">Skills</h2>
+        {skills.map(skill => (
+          <div key={skill.name} className="skill">
+            <svg viewBox="0 0 36 36" className="svg-skill">
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="#ccc"
+                strokeWidth="1"
+              />
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="#3B444B"
+                strokeDasharray={`${skill.level}, 100`}
+                strokeWidth="1"
+              />
+            </svg>
+            <div className="skill-name">{skill.name}</div>
+            <div className="skill-level">{skill.level}%</div>
+          </div>
+        ))}
+      </div>
+
+                                                 {/* Projects SECTION*/}
+
+<div className="projects-section">
+    <h2>Work</h2>
+    <div className="projects-container">
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          className="project-card"
+        >
+          <img
+            src={project.imageUrl}
+            alt={`${project.title} image`}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              display: 'block',
+            }}
+          />
+          <div className="project-description">
+            <h3>{project.title}</h3>
+            <a
+              href={project.projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div style={{backgroundColor:'lightgray',width:'100%',height:'15vh',color:'lightgray'}}>......</div>
+  </div>
+
+
+{/* resume */}
+
+<div className="resume-container">
+    <div style={{height:'12vh'}}></div>
+    <h2 className="resume-title">My Resume</h2>
+    <div style={{height:'8vh'}}></div>
+
+    {/* Vertical Line */}
+    <div className="vertical-line"></div>
+
+    {/* Heading for Experience */}
+    <div className="experience-heading">My Experience</div>
+
+    {/* Experience 1 */}
+    <div className="experience-box left">
+        <div className="icon left">
+            <FontAwesomeIcon icon={faBriefcase} style={{ fontSize: '30px' }} />
+        </div>
+        <div className="experience-text">
+            <h3>Software Intern</h3>
+            <p>Naxxa - Aug 2024 - Current, Feb 2024 - March 2024</p>
+            <p>Doing hands-on practice on real-time projects while gaining knowledge of Reactjs and working on APIs.</p>
+        </div>
+    </div>
+
+    {/* Experience 2 */}
+    <div className="experience-box right">
+        <div className="icon right">
+            <FontAwesomeIcon icon={faBriefcase} style={{ fontSize: '30px' }} />
+        </div>
+        <div className="experience-text">
+            <h3>Intern</h3>
+            <p>PNRA - Jul 2024 - Aug 2024</p>
+            <p>Working at PNRA in licensing and compliance monitoring of nuclear facilities while also contributing to cybersecurity measures.</p>
+        </div>
+    </div>
+
+    {/* Experience 3 */}
+    <div className="experience-box left">
+        <div className="icon left">
+            <FontAwesomeIcon icon={faBriefcase} style={{ fontSize: '30px' }} />
+        </div>
+        <div className="experience-text">
+            <h3>Research Assistant</h3>
+            <p>Institute of Space & Technology - Jun 2023 - Sep 2023</p>
+            <p>Contributing to research efforts by reviewing and analyzing data from specific papers accumulating required information and organizing it.</p>
+        </div>
+    </div>
+
+    {/* Heading for Education */}
+    <div className="education-heading">Education</div>
+
+    {/* Education 1 */}
+    <div className="experience-box right">
+        <div className="icon right">
+            <FontAwesomeIcon icon={faGraduationCap} style={{ fontSize: '30px' }} />
+        </div>
+        <div className="experience-text">
+            <h3>Bachelors Degree</h3>
+            <p>Institute of Space & Technology - 2021 - Current</p>
+            <p>Gaining technical knowledge with scoring highest CGPA 3.9, while securing a scholarship from IST.</p>
+        </div>
+    </div>
+
+    {/* Education 2 */}
+    <div className="experience-box left">
+        <div className="icon left">
+            <FontAwesomeIcon icon={faGraduationCap} style={{ fontSize: '30px' }} />
+        </div>
+        <div className="experience-text">
+            <h3>Graduation</h3>
+            <p>FFCG - 2019 - 2021</p>
+            <p>Passing the HSSC I and II with A1 grade attaining 96% results (1060/1100) in the Pre-Engineering Category.</p>
+        </div>
+    </div>
+</div>
+
+ {/* Hire Me */}
+
+<div className="hireMeContainer">....</div>
+<div className="hireMeSection">
+  <h1 className="hireMeTitle">Hire Me!</h1>
+  <p className="hireMeText">
+    If you're looking for a motivated individual who is ready to make a meaningful impact, I would love to connect! Feel free to adjust it to better fit your style or specific skills!
+  </p>
+  <a href="https://www.linkedin.com/in/laraib-khalid-60b926232" target="_blank" rel="noopener noreferrer">
+    <button className="hireMeButton">
+      CONTACT US
+    </button>
+  </a>
+</div>
+
+
+{/* Contact Me  */}
+
+<div className="contactContainer">
+  <div className="contactWrapper">
+    <div className="contactImageWrapper">
+      <img
+        src={contact} // Replace with your image path
+        alt="Contact"
+        className="contactImage"
+      />
+    </div>
+
+    {/* <div className="spacer"></div> */}
+
+    <div className="contactFormWrapper">
+      <div className="contactTitle">Send us a message</div>
+      <p className="contactDescription">
+        If you have any work from me or any types of queries related to my tutorial, you can send me a message from here. It's my pleasure to help you.
+      </p>
+      <form action="#">
+        <div className="inputWrapper">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            className="contactInput"
+          />
+        </div>
+        <div className="inputWrapper">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            className="contactInput"
+          />
+        </div>
+        <div className="textareaWrapper">
+          <textarea
+            placeholder="Enter your message"
+            className="contactTextarea"
+          ></textarea>
+        </div>
+        <div className="sendButtonWrapper">
+          <input
+            type="button"
+            value="Send Now"
+            className="sendButton"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+/*CSS  perfect except for resume section*/
+
+/* General styles */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .profile-container {
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-inner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 15%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+  }
+  
+  .name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tilted-name {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 8vh;
+    color: #3B444B;
+    transform: rotate(-5deg);
+    white-space: nowrap;
+    padding: 0 1rem;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 3vh;
+    color: #3B444B;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    width: 15%;
+    margin: 1rem 0; /* Optional: Add some vertical margin */
+  }
+  
+  .icon {
+    margin: 0 0.5rem; /* Adjust horizontal spacing */
+    color: #3B444B;
+    transition: transform 0.3s; /* Smooth transition effect */
+  }
+  /*Media Queries for responsiveness */
+  
+  @media (max-width: 1200px) {
+    .profile-pic {
+      width: 20%;
+    }
+  
+    .name-container {
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .tilted-name {
+      font-size: 6vh;
+    }
+  
+    .title {
+      font-size: 2.5vh;
+    }
+  
+    .social-icons {
+      width: 25%; /* Increase width for medium screens */
+    }
+  
+    .icon {
+      font-size: 1.5em; /* Decrease icon size on smaller screens */
+    }
+   
+  }
+  
+  @media (max-width: 768px) {
+    .profile-pic {
+      width: 30%;
+    }
+  
+    .tilted-name {
+      font-size: 5vh;
+    }
+  
+    .title {
+      font-size: 2vh;
+    }
+  
+    .social-icons {
+      width: 40%; /* Increase width for smaller screens */
+    }
+  
+    .icon {
+      font-size: 1.2em; /* Further decrease icon size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-pic {
+      width: 40%;
+    }
+  
+    .tilted-name {
+      font-size: 4vh;
+    }
+  
+    .title {
+      font-size: 1.5vh;
+    }
+  
+    .social-icons {
+      width: 60%; /* Increase width to occupy more space on very small screens */
+    }
+  
+    .icon {
+      font-size: 1em; /* Set minimum icon size */
+    }
+  }
+    
+  
+  /* ABOUT ME SECTION */
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .about-title {
+    font-size: 5vh;
+    margin-bottom: 15px;
+    margin-top: 20vh;
+    font-weight: normal;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+  
+  .info-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  
+  .info-item {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  
+  .info-label {
+    font-weight: bold;
+    font-size: 3vh;
+    width: 120px;
+  }
+  
+  .info-value {
+    font-style: italic;
+    font-size: 15px;
+    color: gray;
+    margin-left: 10px;
+  }
+  
+  .paragraph-section {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .paragraph {
+    width: 90%;
+    color: gray;
+    font-size: 3vh;
+  }
+  
+  .icons-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+  }
+  
+  .icons-section .icon {
+    margin: 0 10px; /* Add horizontal spacing */
+    transition: transform 0.3s; /* Smooth transition effect */
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media (max-width: 1024px) {
+    .about-section {
+      flex-direction: column; /* Stack the info and paragraph sections */
+      align-items: center; /* Center items */
+    }
+  
+    .info-section {
+      flex: none; /* Remove flex-grow to allow stacking */
+      width: 100%; /* Take full width */
+      margin-top: 5vh; /* Adjust margin */
+    }
+  
+    .paragraph-section {
+      width: 100%; /* Take full width */
+    }
+  
+    .info-label {
+      width: auto; /* Allow label width to adjust */
+    }
+  
+    .info-value {
+      font-size: 14px; /* Slightly smaller font size for smaller screens */
+    }
+  
+    .paragraph {
+      font-size: 2.5vh; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 4vh; /* Smaller title for smaller screens */
+    }
+  
+    .info-label {
+      font-size: 2.5vh; /* Adjust label size */
+    }
+  
+    .paragraph {
+      font-size: 2vh; /* Smaller paragraph size */
+    }
+  
+    .icons-section {
+      flex-direction: row; /* Stack icons vertically */
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .icons-section .icon {
+      font-size: 1.5em; /* Set minimum icon size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 3.5vh; /* Further reduce title size */
+    }
+  
+    .info-item {
+      flex-direction: column; /* Stack info items */
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    .info-label {
+      font-size: 2vh; /* Smaller label size */
+    }
+  
+    .info-value {
+      font-size: 12px; /* Smaller value size */
+    }
+  
+    .paragraph {
+      font-size: 1.8vh; /* Smaller paragraph size */
+    }
+    .icons-section .icon {
+      font-size: 1em; /* Set minimum icon size */
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  
+  
+      /*  SKILL SECTION  */
+      .skill-container {
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* Center items */
+        align-items: flex-start; /* Align items at the top */
+        flex-wrap: wrap; /* Allow wrapping to next line */
+      }
+      
+      .skill-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 6vh;
+        font-weight: normal;
+      }
+      
+      .skill {
+        margin: 7vh; /* Space between skills */
+        width: 30vh; /* Default width for larger screens */
+        height: 150px; /* Default height */
+        position: relative;
+        display: flex; /* Use flexbox for centering */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+      }
+      
+      /* Media Queries for responsiveness */
+      @media (max-width: 1200px) {
+        .skill {
+          width: 25vh; /* Decrease width for medium screens */
+          height: 120px; /* Decrease height for medium screens */
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .skill {
+          width: 20vh; /* Decrease width for smaller screens */
+          height: 100px; /* Decrease height for smaller screens */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .skill {
+          width: 15vh; /* Further decrease width for extra small screens */
+          height: 80px; /* Further decrease height for extra small screens */
+        }
+      }
+      
+      
+      /*     Projects Section     */
+      
+      .projects-section {
+        margin-top: 15vh;
+        width: 100%;
+        height: auto; /* Change to auto for better responsiveness */
+        background-color: lightgrey;
+        font-family: 'Roboto Mono', monospace;
+      }
+      
+      .projects-section h2 {
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        font-size: 7vh;
+        font-weight: normal;
+      }
+      
+      .projects-container {
+        width: 80%;
+        max-width: 1200px;
+        overflow: hidden;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center;
+        gap: 20px;
+      }
+      
+      .project-card {
+        flex: 0 1 calc(23% - 10px); /* 4 cards per row on large screens */
+        width: 15%; /* This can be removed; flex will handle sizing */
+        height: 250px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        background-color: #f0f0f0;
+        margin-bottom: 5px;
+      }
+      
+      .project-card:hover {
+        background-color: lightgray;
+        transform: scale(1.05);
+      }
+      
+      .project-card:hover .project-description {
+        opacity: 1;
+      }
+      
+      .project-description {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(211, 211, 211, 0.8);
+        color: #3B444B;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-size: 15px;
+      }
+      
+      .project-description h3 {
+        margin: 10px 0;
+      }
+      
+      .project-description a {
+        color: #3B444B;
+        text-decoration: none;
+      }
+      
+      /* Media Queries for responsiveness */
+      @media (max-width: 1200px) {
+        .project-card {
+          flex: 0 1 calc(48% - 10px); /* 2 cards per row for medium screens */
+          height: 200px; /* Adjust height for smaller screens */
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .projects-section{
+          margin-bottom: 2vh;
+        }
+        .project-card {
+          flex: 0 1 calc(100% - 10px); /* 1 card per row for small screens */
+          height: 180px; /* Adjust height for smaller screens */
+        }
+      
+        .projects-section h2 {
+          font-size: 6vh; /* Adjust heading size for small screens */
+        }
+      }
+  
+  
+      
+    /* HIRE ME SECTION */
+    .hireMeSection {
+      background-color: lightgray;
+      color: #3B444B;
+      text-align: center;
+      padding: 50px 0;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .hireMeContainer{
+      color: white;
+    }
+    .hireMeTitle {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    /* Responsive Title for tablets and smaller screens */
+    @media (max-width: 768px) {
+      .hireMeTitle {
+        font-size: 36px;
+      }
+    }
+    
+    /* Responsive Title for mobile phones */
+    @media (max-width: 480px) {
+      .hireMeTitle {
+        font-size: 28px;
+      }
+    }
+    
+    .hireMeText {
+      font-size: 18px;
+      margin-bottom: 30px;
+      width: 60%;
+      text-align: center;
+    }
+    
+    /* Responsive text for tablets */
+    @media (max-width: 768px) {
+      .hireMeText {
+        width: 80%;
+        font-size: 16px;
+      }
+    }
+    
+    /* Responsive text for mobile phones */
+    @media (max-width: 480px) {
+      .hireMeText {
+        width: 90%;
+        font-size: 14px;
+      }
+    }
+    
+    /* Responsive text for very small mobile screens */
+    @media (max-width: 320px) {
+      .hireMeText {
+        width: 95%;
+        font-size: 12px;
+      }
+    }
+    
+    .hireMeButton {
+      background-color: #3B444B;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    /* Responsive button for tablets */
+    @media (max-width: 768px) {
+      .hireMeButton {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+    
+    /* Responsive button for mobile phones */
+    @media (max-width: 480px) {
+      .hireMeButton {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+    }
+    
+    /* Responsive button for very small mobile screens */
+    @media (max-width: 320px) {
+      .hireMeButton {
+        font-size: 10px;
+        padding: 5px 10px;
+      }
+    }
+  
+    /* Contact Me Section  */
+    .contactContainer {
+      width: 85%;
+      background: #fff;
+      border-radius: 6px;
+      padding: 20px 60px 30px 40px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+    
+    .contactWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    
+    .contactImageWrapper {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      position: relative;
+    }
+    
+    .contactImage {
+      width: 150%;
+      height: 190%;
+      border-radius: 6px;
+    }
+    
+    .spacer {
+      height: 20vh;
+      color: white;
+    }
+    
+    .contactFormWrapper {
+      width: 75%;
+      margin-left: 75px;
+    }
+    
+    .contactTitle {
+      font-size: 23px;
+      font-weight: 600;
+      color: #3B444B;
+    }
+    
+    .contactDescription {
+      color: #afafb6;
+    }
+    
+    .inputWrapper {
+      height: 50px;
+      width: 100%;
+      margin: 12px 0;
+    }
+    
+    .contactInput {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background: lightgray;
+      border-radius: 6px;
+      padding: 0 15px;
+    }
+    
+    .textareaWrapper {
+      min-height: 110px;
+      padding-top: 6px;
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background: lightgray;
+      border-radius: 6px;
+      padding: 0 15px;
+    }
+    
+    .contactTextarea {
+      height: 100%;
+      width: 90%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background: lightgray;
+      border-radius: 6px;
+      resize: none;
+      margin-top: 2vh;
+    }
+    
+    .sendButtonWrapper {
+      display: inline-block;
+      margin-top: 12px;
+    }
+    
+    .sendButton {
+      margin: 3vh;
+      color: #fff;
+      font-size: 18px;
+      outline: none;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: #3B444B;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    /* Responsive Styles */
+    
+    /* Tablet screens */
+    @media (max-width: 768px) {
+      .contactContainer {
+        width: 90%;
+        padding: 20px 30px 30px 30px;
+      }
+      .contactWrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .contactImageWrapper {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .contactImage {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+      }
+      .contactFormWrapper {
+        margin-left: 0;
+        width: 100%;
+      }
+    
+      .contactInput, .contactTextarea {
+        font-size: 14px;
+      }
+    
+      .sendButton {
+        font-size: 16px;
+        padding: 6px 12px;
+      }
+    }
+    
+    /* Mobile screens */
+    @media (max-width: 480px) {
+      .contactContainer {
+        flex-direction: column;
+        padding: 15px 20px;
+        width: 95%;
+      }
+    
+      .contactWrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .contactImageWrapper {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .contactImage {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+      }
+    
+      .spacer {
+        height: auto;
+        display: none;
+        
+      }
+    
+      .contactFormWrapper {
+        width: 100%;
+        margin-left: 0;
+      }
+    
+      .contactTitle {
+        font-size: 20px;
+      }
+    
+      .contactDescription {
+        font-size: 14px;
+      }
+    
+      .contactInput, .contactTextarea {
+        font-size: 14px;
+      }
+    
+      .contactTextarea {
+        width: 100%;
+      }
+    
+      .sendButtonWrapper {
+        margin-top: 10px;
+      }
+    
+      .sendButton {
+        font-size: 14px;
+        padding: 6px 10px;
+      }
+    }
+  
+/* General Styles */
+.resume-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .resume-title {
+    font-weight: normal;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 7vh;
+    text-align: center;
+  }
+  
+  .vertical-line {
+    position: absolute;
+    height: 85%;
+    border-left: 2px solid lightgray;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0; /* Lower z-index so it's below the boxes */
+  }
+  
+  .experience-heading,
+  .education-heading {
+    width: 20%;
+    max-width: 600px;
+    margin: 2vh auto;
+    border-radius: 1vh;
+    background-color: lightgray;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .experience-box,
+  .education-box {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .experience-box.left {
+    justify-content: flex-start;
+    margin-left: 53%;
+  }
+  
+  .experience-box.right {
+    justify-content: flex-end;
+    margin: 0 auto;
+    margin-left: 1%;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* Ensure the icon is above other elements */
+  }
+  
+  .icon.left {
+    left: -50px; /* Position icon to the left of the vertical line */
+  }
+  
+  .icon.right {
+    right: -20px; /* Adjusted to decrease the gap between the icon and the text */
+  }
+  
+  .experience-text,
+  .education-text {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width:80%
+  }
+  
+  h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5vh;
+    font-weight: normal;
+  }
+  
+  p {
+    color: grey;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .resume-title {
+        font-size: 6vh; /* Adjust for smaller screens */
+    }
+  
+    .experience-box,
+    .education-box {
+        width: 50%; /* Full width on smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    .icon.left {
+        left: -30px; /* Adjust for smaller screens */
+    }
+  
+    .icon.right {
+        right: 30px; /* Adjust for smaller screens */
+    }
+  
+    .experience-heading,
+    .education-heading {
+        font-size: 3.5vh; /* Adjust heading size */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .resume-title {
+        font-size: 5vh; /* Further adjust for even smaller screens */
+    }
+  
+    h3 {
+        font-size: 4vh; /* Adjust the h3 font size */
+    }
+  
+    p {
+        font-size: 3.5vh; /* Adjust paragraph font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .resume-title {
+        font-size: 4vh; /* Mobile size */
+    }
+  
+    h3 {
+        font-size: 3.5vh; /* Mobile size */
+    }
+  
+    p {
+        font-size: 3vh; /* Mobile size */
+    }
+  }  
